@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Exercice 3</title>
+</head>
+<body onkeydown="rectangle(event)">
+    <div>
+        <center>
+            <div id="rectangle"></div>
+        </center>
+    </div>
+    <script>
+        function rectangle(event){
+            var code = event.keyCode;
+            if(code == 38){
+                document.getElementById("rectangle").classList.toggle("animate");
+            }
+        }
+    </script>
+</body>
+</html>
